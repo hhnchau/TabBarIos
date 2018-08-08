@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M9H-5O-5Jo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tinh te-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TinhTeViewController" customModule="TabBarIos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WPh-T7-2wW">
+                                <rect key="frame" x="-0.5" y="-14.5" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WPh-T7-2wW" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="haz-iU-UjG"/>
+                            <constraint firstItem="WPh-T7-2wW" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="iFq-Uh-AXI"/>
+                            <constraint firstItem="WPh-T7-2wW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kAj-Jc-sM2"/>
+                            <constraint firstItem="WPh-T7-2wW" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="ryg-ZP-oTt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tinh te" image="ic_home" id="xju-0W-Z3K"/>
+                    <connections>
+                        <outlet property="webView" destination="WPh-T7-2wW" id="SRp-ju-AGH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="310"/>
+        </scene>
+        <!--Zing-->
+        <scene sceneID="W77-fq-yfG">
+            <objects>
+                <viewController id="OWv-PW-l8i" customClass="ZingViewController" customModule="TabBarIos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aYb-85-0vo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f5m-GI-z04">
+                                <rect key="frame" x="-0.5" y="-14.5" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="f5m-GI-z04" firstAttribute="width" secondItem="aYb-85-0vo" secondAttribute="width" id="Jk8-IA-mww"/>
+                            <constraint firstItem="f5m-GI-z04" firstAttribute="centerY" secondItem="Iv4-M2-Qoz" secondAttribute="centerY" id="U06-jW-ZxB"/>
+                            <constraint firstItem="f5m-GI-z04" firstAttribute="centerX" secondItem="Iv4-M2-Qoz" secondAttribute="centerX" id="x5x-5M-35I"/>
+                            <constraint firstItem="f5m-GI-z04" firstAttribute="height" secondItem="aYb-85-0vo" secondAttribute="height" id="ybR-Ys-cuP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Iv4-M2-Qoz"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Zing" image="ic_contact" id="Zd1-PF-Oa6"/>
+                    <connections>
+                        <outlet property="webView" destination="f5m-GI-z04" id="QOD-eb-iwO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dui-L5-bc3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="934" y="-421"/>
+        </scene>
+        <!--Khoa pham-->
+        <scene sceneID="RQJ-DQ-9wR">
+            <objects>
+                <viewController id="SLf-N5-OHA" customClass="KhoaPhamViewController" customModule="TabBarIos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m1u-wn-fw6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RfW-1J-ufY">
+                                <rect key="frame" x="-0.5" y="-14.5" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RfW-1J-ufY" firstAttribute="width" secondItem="m1u-wn-fw6" secondAttribute="width" id="MWg-Cs-9iY"/>
+                            <constraint firstItem="RfW-1J-ufY" firstAttribute="centerY" secondItem="bUS-1g-fFe" secondAttribute="centerY" id="VnB-65-mH7"/>
+                            <constraint firstItem="RfW-1J-ufY" firstAttribute="centerX" secondItem="bUS-1g-fFe" secondAttribute="centerX" id="aHB-Gs-C4d"/>
+                            <constraint firstItem="RfW-1J-ufY" firstAttribute="height" secondItem="m1u-wn-fw6" secondAttribute="height" id="t1O-2a-km9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bUS-1g-fFe"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Khoa pham" image="ic_setting" id="Vzr-tK-vfJ"/>
+                    <connections>
+                        <outlet property="webView" destination="RfW-1J-ufY" id="I78-FQ-Pde"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MmH-25-zPE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="1025"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Thz-3c-TLK">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="M9H-5O-5Jo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KJB-ri-kFG">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="OWv-PW-l8i" kind="relationship" relationship="viewControllers" id="75I-4A-7j3"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="vfV-ui-w02"/>
+                        <segue destination="SLf-N5-OHA" kind="relationship" relationship="viewControllers" id="bWa-3S-x7R"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0sv-rg-XBP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-196" y="354"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_contact" width="24" height="24"/>
+        <image name="ic_home" width="24" height="24"/>
+        <image name="ic_setting" width="24" height="24"/>
+    </resources>
+</document>
